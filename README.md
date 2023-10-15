@@ -52,8 +52,10 @@ Make your changes and commit them.
 Push to your fork and submit a pull request to the main repository.
 Please make sure your code follows best practices and is well-documented.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 
 
