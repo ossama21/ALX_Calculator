@@ -106,7 +106,7 @@ int main() {
     // Calculate the project final score based on the specified formula
     double mandatoryPercentage = (totalMandatoryWeight > 0) ? (totalMandatoryScore / totalMandatoryWeight * 100.0) : 0.0;
     double advancedPercentage = (numAdvancedTasks > 0) ? (totalAdvancedWeight > 0 ? (totalAdvancedScore / totalAdvancedWeight * 100.0) : 0.0) : 0.0; // Set advanced percentage to 0 if there are no advanced tasks
-    double finalScore = mandatoryPercentage + (advancedPercentage / 100.0);
+    int finalScore = (mandatoryPercentage + advancedPercentage) * (totalMandatoryWeight + totalAdvancedWeight) / (totalMandatoryWeight);
 
     // Display the sorted tasks with scores and the project final score
     printf("Sorted tasks with scores and the project final score:\n");
